@@ -6,9 +6,9 @@ const Headx = () => {
   }
 
   btn();
-  
+
   return (
-    <></>
+    <div></div>
   )
 }
 
