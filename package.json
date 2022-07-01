@@ -1,6 +1,6 @@
 {
   "name": "headx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A document head manager for React",
   "author": "theritikchoure",
   "license": "MIT",
@@ -59,6 +59,12 @@
     "meta",
     "link",
     "meta title",
-    "script", "base", "noscript", "tags", "meta tags", "script tags", "theritikchoure"
+    "script",
+    "base",
+    "noscript",
+    "tags",
+    "meta tags",
+    "script tags",
+    "theritikchoure"
   ]
 }
