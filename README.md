@@ -13,16 +13,24 @@ npm install --save headx
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'headx'
-import 'headx/dist/index.css'
+import Headx from 'headx'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return (
+    <div>
+      <Headx 
+        title="Headx - Document Head Manager ⚓" 
+        meta={[{name: 'description', content: 'Document Head Manager ⚓'}, {name: 'author', content: 'theritikchoure'}]}
+        httpEquiv={[{name: 'refresh', content: '30'}]}
+        links={[{name: 'stylesheet', content: 'styles.css'}]}
+      />
+    </div>
+  )
 }
+
+export default App
 ```
 
 ## License
