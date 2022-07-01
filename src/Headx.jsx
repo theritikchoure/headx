@@ -1,11 +1,15 @@
-import React from 'react';
-const Button = (props) => {
+import React from 'react'
 
-    const btn = () => {
-        console.log('Hello')
-    }
+const Headx = () => {
+  const btn = () => {
+    console.log('hb');
+  }
 
-    btn();
+  btn();
+  
+  return (
+    <></>
+  )
 }
 
-export default Button;
+export default Headx
