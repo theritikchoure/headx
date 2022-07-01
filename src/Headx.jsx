@@ -5,10 +5,8 @@ const Headx = () => {
     console.log('hb');
   }
 
-  btn();
-
   return (
-    <div></div>
+    <>{btn()}</>
   )
 }
 
