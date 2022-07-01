@@ -49,5 +49,16 @@
   },
   "files": [
     "dist"
+  ],
+  "homepage": "https://github.com/theritikchoure/headx",
+  "keywords": [
+    "react",
+    "document",
+    "head",
+    "title",
+    "meta",
+    "link",
+    "meta title",
+    "script", "base", "noscript", "tags", "meta tags", "script tags", "theritikchoure"
   ]
 }
