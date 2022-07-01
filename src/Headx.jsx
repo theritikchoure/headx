@@ -6,7 +6,7 @@ const Headx = () => {
   }
 
   return (
-    <>{btn()}</>
+    <React.Fragment>{btn()}</React.Fragment>
   )
 }
 
