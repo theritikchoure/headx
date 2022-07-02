@@ -22,7 +22,8 @@ const App = () => {
     <div>
       <Headx 
         title="Headx - Document Head Manager ⚓" 
-        meta={[{name: 'description', content: 'Document Head Manager ⚓'}, {name: 'author', content: 'theritikchoure'}]}
+        meta={[{name: 'description', content: 'Document Head Manager ⚓'}, 
+        {name: 'author', content: 'theritikchoure'}]}
         httpEquiv={[{name: 'refresh', content: '30'}]}
         links={[{name: 'stylesheet', content: 'styles.css'}]}
       />
