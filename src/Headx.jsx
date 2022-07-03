@@ -3,7 +3,7 @@ import React from 'react'
 const Headx = (props) => {
 
   const tags = (props) => {
-    const { title, meta, httpEquiv, links } = props
+    const { title, meta, httpEquiv, links, og, twitter } = props
 
     if(title) {
         document.title = props.title
@@ -33,6 +33,24 @@ const Headx = (props) => {
             linkTag.rel = link.name;
             linkTag.href = link.content;
             document.head.appendChild(linkTag);
+        })
+    }
+
+    if(og) {
+        og.map((og) => {
+            const ogTag = document.createElement('meta');
+            ogTag.setAttribute('property', `og:${og.name}`);
+            ogTag.content = og.content;
+            document.head.appendChild(ogTag);
+        })
+    }
+    
+    if(twitter) {
+        twitter.map((twitter) => {
+            const twitterTag = document.createElement('meta');
+            twitterTag.setAttribute('property', `twitter:${twitter.name}`);
+            twitterTag.content = twitter.content;
+            document.head.appendChild(twitterTag);
         })
     }
     
