@@ -1,4 +1,4 @@
-# headx
+# Headx 
 
 > It is a React Package to automatically modify the main html file (like index.html) to add the provided SEO meta tags and more. For example you can use it to add on the build time the following meta tags: title, description, open graph, twitter, icons and more.
 
@@ -12,30 +12,90 @@ npm install --save headx
 
 ## Usage
 
-```jsx
+Then you need to import `headx` as `Headx`. This will render out the tags in the `<head>` for SEO. At a bare minimum, you should add a title and description.
 
+**Example with just title and description:**
+
+```jsx
+import Headx from 'headx';
+
+const Page = () => (
+  <>
+    <Headx
+      title="Headx - Document Head Manager ⚓"
+      meta={[{name: 'description', content: 'Document Head Manager ⚓'}]}
+    />
+
+    <p>Simple Usage</p>
+  </>
+);
+
+export default Page;
+```
+
+But `Headx` gives you many more options that you can add inside the head tag. See below for a more detail example of a page.
+
+**Typical page example:**
+
+```jsx
 import React from 'react'
 
-import Headx from 'test'
+import Headx from 'headx'
 
 const App = () => {
-  return (
-    <div>
-      <Headx 
-        title="Headx - Document Head Manager ⚓" 
-        meta={[{name: 'description', content: 'Document Head Manager ⚓'}, {name: 'author', content: 'theritikchoure'}]}
-        httpEquiv={[{name: 'refresh', content: '30'}]}
-        links={[{name: 'stylesheet', content: 'styles.css'}]}
-        og={[{name: 'type', content: 'website'}, {name: 'url', content: 'http://example.com'}]}
-        twitter={[{name: 'type', content: 'website'}, {name: 'url', content: 'http://example.com'}]}
-      />
-    </div>
-  )
+    return ( 
+      <div>
+        <Headx 
+          title="Headx - Document Head Manager ⚓" 
+          meta={[{name: 'description', content: 'Document Head Manager ⚓'}, 
+          {name: 'author', content: 'theritikchoure'}]}
+          httpEquiv={[{name: 'refresh', content: '30'}]}
+          links={[{name: 'stylesheet', content: 'styles.css'}]}
+          og={[{name: 'type', content: 'website'}, 
+              {name: 'url', content: 'http://example.com'}]}
+          twitter={[{name: 'type', content: 'website'}, 
+              {name: 'url', content: 'http://example.com'}]}
+        />
+      </div>
+    )
 }
-
+  
 export default App
-
 ```
+
+### Default SEO Configuration
+
+`Headx` enables you to set some default SEO properties that will appear on all pages without needing to include anything on them. You can also override these on a page by page basis if needed.
+
+To achieve this, Within your `Layout` or `Header` file you will need to import `headx` and pass it props.
+
+Here is a typical example:
+
+```jsx
+import React from 'react'
+
+import Headx from 'headx'
+
+const App = () => {
+    return ( 
+      <div>
+        <Headx 
+          og={[{name: 'type', content: 'website'}, 
+              {name: 'url', content: 'http://example.com'}]}
+          twitter={[{name: 'type', content: 'website'}, 
+              {name: 'url', content: 'http://example.com'}]}
+        />
+      </div>
+    )
+}
+  
+export default App
+```
+
+**Note:** To work properly default seo configuration, `Headx` should be placed in `Layout` or `Navbar` file.
+
+
+From now on all of your pages will have the defaults above applied.
 
 ## Features
 
