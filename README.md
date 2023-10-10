@@ -5,6 +5,17 @@
 [![NPM](https://img.shields.io/npm/v/headx.svg)](https://www.npmjs.com/package/headx) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) ![Unpacked Size](https://img.shields.io/badge/Unpacked%20Size-17.4%20kB-blue)
 [![Twitter Follow](https://img.shields.io/twitter/follow/theritikchourestyle.svg?style=social&label=Follow%20%40theritikchoure)](https://twitter.com/theritikchoure)
 
+## Table of Contents
+1. [Install](#install)
+2. [Usage](#usage)
+3. [Default SEO Configuration](#default-seo-configuration)
+4. [Features](#features)
+    - [Supports](#supports)
+    - [No Duplicacy](#no-duplicacy)
+    - [Fast & Light](#fast--light)
+5. [Additional Information](#additional-information)
+6. [License](#license)
+
 ## Install
 
 ```bash
